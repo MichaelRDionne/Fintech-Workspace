@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StudentGuide.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="unit-3-python-and-pandas">Unit 3: Python and Pandas</h2>
+<h3 id="helpful-links">Helpful Links</h3>
+<ul>
+<li>
+<p><a href="https://chrisalbon.com/">Pandas Tutorials</a></p>
+</li>
+<li>
+<p><a href="http://pandas.pydata.org/">Pandas Documentation</a></p>
+</li>
+<li>
+<p><a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html">Pandas Visualization</a></p>
+</li>
+<li>
+<p><a href="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/">Visual Guide to Joins</a></p>
+</li>
+<li>
+<p><a href="https://pandas.pydata.org/pandas-docs/stable/merging.html">Pandas Merging</a></p>
+</li>
+<li>
+<p><a href="AnacondaInstallGuide.md">Anaconda Install Guide</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="additional-course-resources">Additional Course Resources</h3>
+<h3 id="faqs">FAQs</h3>
+<details><summary>Why is it called pandas?</summary>
+According to *Python for Data Analysis*, written by Pandas inventor himself, Wes McKinney, the name pandas "is derived from panel data, an econometrics term for multidimensional structured data sets, and Python data analysis itself"(McKinney, 2013).
+</details>
+<details><summary>How do you access a column?</summary>
+To access a column in your DataFrame you call the DataFrame variable plus the column by using either bracket or dot notation.  For example, lets use the following DataFrame named `cylons`:
+<p><img src="Images/Cylon_DF.PNG" alt="Cylon DF"><br></p>
+<p>you would access the <code>Model_Number</code> column as follows:</p>
+<p><img src="Images/Cylon_Series.PNG" alt="Cylon DF"><br></p>
+</details>
+<details><summary>Why do I keep getting a key error?</summary>
+If Pandas throws a key error at you, it can be really frustrating, especially when you just *know* you've typed in a value that is in the key.  If this happens during the accessing of a column, try running the df.columns function to get a screen print of all the column names.  You might have an invisible space or escaped line in the column name that doesn't show up during normal printing, that will show up when this function is used.  In some cases you might be using a function that defaults to the row axis instead of the column axis.  In that situation you will get an error like: `KeyError: "['X'] not found in axis"`.  In that situation, yes the key exists but that function isn't looking for the column keys, but rather a row value.
+</details>
+<details><summary>What is a DataFrame axis?</summary>
+A DataFrame axis is simply the column headers or the row index positions.  This image helps to visualize it:
+<p><img src="Images/Cylon_Axes.png" alt="Cylon DF Axes"><br></p>
+</details>
+<details><summary>What is the difference between a Series and a DataFrame?</summary>
+A DataFrame is a 2D matrix object holding rows and columns.  A Series is a 1D object, much like an array, though it can have an index.  When a single column is extracted from a DataFrame, it is a Series object.  The following image shows a Series object extracted from our cylons DataFrame:
+<p><img src="Images/Cylon_Series.PNG" alt="Cylon DF Series"><br></p>
+</details>
+<details><summary>Why do my Dataframe changes disappear when I move to the next cell in Jupyter?</summary>
+<p>When a DataFrame is stored in a variable, it is a one time snapshot of the DataFrame at the time of storage.  If you make changes to the DataFrame, you must either store the new DataFrame in a new variable, overwrite the old DataFrame variable name, or use the <code>inplace = True</code> argument in the function parameters.  For example, the following code will only populate a change for the [notebook cell in which it is located:  <code>cylons.rename({'Model_Number': 'Model#'})</code>.  But by adding an <code>inplace=True</code> parameter, the change will say:  <code>cylons.rename(columns={'Model_Number': 'Model#'}, inplace=True)</code>.  An equivalent method is to reassign the value and call it: <code>cylons = cylons.rename(columns={'Model_Number': 'Model#'})</code>.</p>
+</details>
+<details><summary>How do you loop through a DataFrame?</summary>
+<p>There are multiple methods to achieve this task.  For a super efficient method see our example below.  To see other methods, check out this great <a href="https://medium.com/@rtjeannier/pandas-101-cont-9d061cb73bfc">Medium article</a>.</p>
+<p>You can loop through our cylons DataFrame using <code>.loc</code> as follows:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> cylons.index:
+        print(cylons.loc[i,<span class="hljs-string">'Alias'</span>])
+        print(cylons.loc[i, <span class="hljs-string">'Model#'</span>])
+</div></code></pre>
+<p>In this example <code>.loc()</code> searches for <code>i</code>, which represents the contents of each cell, and then the column name that is passed, both in brackets.</p>
+</details>
+<details><summary>Why must I apply a function to a groupby object in order to output a DataFrame?</summary>
+<p>The groupby function puts all elements of a certain category together by finding each unique value in the column specified and converting that to a new index.  If you were to group our cylons_df by the <code>Model#</code> but not apply a function to it, the code can run the grouping, but it doesn't know what to do with the other columns.  There would be a new index, with extraneous data that doesn't fit the new index length or match up in anyway.  By applying an aggregation function, such as <code>.count()</code>, the code can perform an aggregation on the other columns and keep them in the object.  For example, if we run <code>cylons_df.groupby('Model#').count()</code>, our DataFrame index is converted into the unique values of cylon model numbers, and then the other data is counted based on how many there are of each model number.</p>
+<p><img src="Images/Cylon_Groupby.PNG" alt="Cylon DF Groupby"><br></p>
+</details>
+<details><summary>What does this error mean: `TypeError: unsupported operand type`?</summary>
+<p>Have you ever gotten an error similar to this:  <code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code>?  If so, its because you were trying to combine data of different types, and Python doesn't like that! Let's take the following code, where we are trying to concatenate a string to the end of an integer to make a new sentence:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> cylons[<span class="hljs-string">'Model#'</span>]:
+    print(x + <span class="hljs-string">' is the best!'</span>)
+</div></code></pre>
+<p>This would throw the following error:</p>
+<pre class="hljs"><code><div>TypeError: unsupported operand type(s) <span class="hljs-keyword">for</span> +: <span class="hljs-string">'int'</span> <span class="hljs-keyword">and</span> <span class="hljs-string">'str'</span>
+</div></code></pre>
+<p>The TypeError will typically tell you what two datatypes you are trying to combine, as in the above code snippet.  So to fix our error, we just have to alter these data types to make them play nice!  To do that we can change our integer to a string as follows:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> cylons[<span class="hljs-string">'Model#'</span>]:
+    print(str(x) + <span class="hljs-string">' is the best!'</span>)
+</div></code></pre>
+<p>Now when we run the code, we get the result we are looking for:</p>
+<pre class="hljs"><code><div><span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">6</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">3</span> <span class="hljs-keyword">is</span> the best!
+<span class="hljs-number">3</span> <span class="hljs-keyword">is</span> the best!
+</div></code></pre>
+</details>
+<h4 id="sources">Sources:</h4>
+<p>McKinney, W. (2013) <em>Python for Data Analysis.</em> O'Reilly Media, Inc, USA.</p>
+<hr>
+<h3 id="copyright">Copyright</h3>
+<p>© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
+
+</body>
+</html>
