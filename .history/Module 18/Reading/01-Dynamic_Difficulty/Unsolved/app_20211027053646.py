@@ -65,7 +65,7 @@ class PyChain:
     # @TODO:
     # Add a `difficulty` data attribute with a data type of `int` and a default
     # value of 4.
-    difficulty = 4
+    # YOUR CODE HERE
 
 # Step 2:
 # Add a `num_of_zeros` data attribute that multiplies the string value ("0") by the `difficulty` value.
@@ -74,7 +74,7 @@ class PyChain:
 
         # @TODO:
         # Add a `num_of_zeros` data attribute that multiplies the string value ("0") by the `difficulty` value.
-        num_of_zeros = "0" * self.difficulty
+        # YOUR CODE HERE
 
         while not calculated_hash.startswith(num_of_zeros):
             block.nonce += 1
@@ -116,11 +116,11 @@ input_data = st.text_input("Block Data")
 
 # @TODO:
 # Add a Streamlit slider named "Block Difficulty" that allows the user to update a difficulty value. Set this equal to the variable `difficulty`
-difficulty = st.slider("Block Difficulty", 1, 5, 4)
+# YOUR CODE HERE
 
 # @TODO
 # Update the `difficulty` data attribute of the `PyChain` data class (`pychain.difficulty`) with this new `difficulty` value
-pychain.difficulty = difficulty
+# YOUR CODE HERE
 
 
 if st.button("Add Block"):
