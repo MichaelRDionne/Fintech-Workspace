@@ -463,7 +463,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Module 21- Advanced Solidity/Readings/02-Arcade_Crowdsale/Unsolved/ArcadeTokenMintable.sol": "ArcadeToken"
+			"Module 21- Advanced Solidity/Readings/02-Arcade_Crowdsale/Solved/ArcadeTokenMintable.sol": "ArcadeToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -474,11 +474,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Module 21- Advanced Solidity/Readings/02-Arcade_Crowdsale/Unsolved/ArcadeTokenMintable.sol": {
-			"keccak256": "0xedaf464b793783851bfda38b9639099e34fa54243ffdb5af966c0122397a0274",
+		"Module 21- Advanced Solidity/Readings/02-Arcade_Crowdsale/Solved/ArcadeTokenMintable.sol": {
+			"keccak256": "0x1bb8cf35f62f75ab907a7841b237e2769e9ac842cf5de0d06a2a37e732a825d1",
 			"urls": [
-				"bzz-raw://a3f9a40d717fb60da5b941f5b45d3dbadc5f8950b1ed49f747f5951783bd71b7",
-				"dweb:/ipfs/QmbcAjm7Pofj7tT5S7EMXiwFBH8BGkVi4xVdGT9FhpXbrd"
+				"bzz-raw://1169d8893ae0fc3ad64c4cce80d787bbb69e4d567e3b6bc295f1fe20f4a56fc1",
+				"dweb:/ipfs/QmRVSV3TDmZH3z27dbYjosjTZLudTgG6mvcNToyjomRcYz"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/GSN/Context.sol": {

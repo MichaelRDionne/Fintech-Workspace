@@ -19,8 +19,8 @@ contract ArcadeTokenCrowdsale is Crowdsale, MintedCrowdsale {
 }
 
 contract ArcadeTokenCrowdsaleDeployer {
-    address public arcade_token_address;
     address public arcade_crowdsale_address;
+    address public arcade_token_address;
 
     constructor(
         string memory name,

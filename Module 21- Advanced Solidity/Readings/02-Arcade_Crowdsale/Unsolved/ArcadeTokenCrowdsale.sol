@@ -1,7 +1,6 @@
 pragma solidity ^0.5.0;
 
-// @TODO: Import ArcadeToken from ./ArcadeTokenMintable.sol
-
+import "./ArcadeTokenMintable.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol";
 
@@ -18,27 +17,33 @@ contract ArcadeTokenCrowdsale is Crowdsale, MintedCrowdsale {
         // constructor can stay empty
     }
 
-
 }
 
 contract ArcadeTokenCrowdsaleDeployer {
 
     // @TODO: Add public addresses to keep track of the token_address and arcade_sale_address
+    
+    address public arcade_crowdsale_address;
+    address public arcade_token_address;
+
 
     constructor(
         string memory name,
         string memory symbol,
         address payable wallet // this address will receive all Ether raised by the sale
-    )
-        public
-    {
+    ) public {
         // @TODO: create the ArcadeToken and keep its address handy
-        // Your code here!
+        ArcadeToken token = new ArcadeToken(name, symbol, 0);
+        arcade_token_address = address(token);
 
         // @TODO: create the ArcadeTokenCrowdsale and tell it about the token, then keep its address handy
-        // Your code here!
+        ArcadeTokenCrowdsale arcade_crowdsale = 
+            new ArcadeTokenCrowdsale(1, wallet, token);
+        arcade_crowdsale_address = address(arcade_crowdsale);
+
 
         // @TODO: make the ArcadeTokenCrowdsale contract a minter, then have the ArcadeTokenCrowdsaleDeployer renounce its minter role
-        // Your code here!
+        token.addMinter(arcade_crowdsale_address);
+        token.renounceMinter();
     }
 }
