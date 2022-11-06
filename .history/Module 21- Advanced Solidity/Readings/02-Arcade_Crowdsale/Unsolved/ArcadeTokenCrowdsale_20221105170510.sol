@@ -16,6 +16,7 @@ contract ArcadeTokenCrowdsale is Crowdsale, MintedCrowdsale {
     {
         // constructor can stay empty
     }
+
 }
 
 contract ArcadeTokenCrowdsaleDeployer {
