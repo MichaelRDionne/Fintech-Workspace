@@ -71,6 +71,7 @@ st.markdown("---")
 ################################################################################
 # Appraise Art
 ################################################################################
+
 st.markdown("## Appraise Artwork")
 tokens = contract.functions.totalSupply().call()
 token_id = st.selectbox("Choose an Art Token ID", list(range(tokens)))
