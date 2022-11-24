@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Module 20 - Smart Contracts/Readings/01_Adding_Getters_and_Setters/Unsolved/customer_contract.sol": "CustomerAccount"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Module 20 - Smart Contracts/Readings/01_Adding_Getters_and_Setters/Unsolved/customer_contract.sol": {
+			"keccak256": "0x9acbfa9edfec39775788a27970337eaf2015c92c5d9cf1cc8daf48e870039ada",
+			"urls": [
+				"bzzr://076eaac65bd12d7a6f74b03a43aedc9178938fcd39adf66e456a79406fbd8591"
+			]
+		}
+	},
+	"version": 1
+}
