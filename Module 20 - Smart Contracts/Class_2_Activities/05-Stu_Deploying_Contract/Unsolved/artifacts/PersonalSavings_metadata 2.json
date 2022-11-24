@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "public_savings",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Module 20 - Smart Contracts/Class_2_Activities/05-Stu_Deploying_Contract/Unsolved/PersonalSavings.sol": "PersonalSavings"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Module 20 - Smart Contracts/Class_2_Activities/05-Stu_Deploying_Contract/Unsolved/PersonalSavings.sol": {
+			"keccak256": "0xf49fd7ad025e7eacfaef9948e8b8296f55002ea17e18d882713752288c686b30",
+			"urls": [
+				"bzz-raw://149d8ec6bd12ee3e193c1c203fa497f90817d3c7c3ea5338cce4553f9391be7a",
+				"dweb:/ipfs/QmTxt9ouo3VPGqL7nXVKSXpzAhVq9gU4WWPBTkj8AM94Hr"
+			]
+		}
+	},
+	"version": 1
+}
