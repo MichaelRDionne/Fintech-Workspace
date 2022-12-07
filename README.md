@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Prework](#Prework)
-    1. [Helpful terminal commands](#helpful-terminal-commandsHelpful-terminal-commands)
+    1. [Helpful terminal commands](###helpful-terminal-commandsHelpful-terminal-commands)
     2. [Helpful Github commands](#helpful-github-commandsHelpful-Github-commands)
     3. [Launching Jupyterlab](#launching-jupyterlabLaunching-Jupyterlab)
 
