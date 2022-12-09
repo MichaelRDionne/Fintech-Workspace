@@ -1,0 +1,5 @@
+def convert_usd_to_btc(usd_amount):
+    current_btc_value = 9670
+    return usd_amount / current_btc_value
+
+    
