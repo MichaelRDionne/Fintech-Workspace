@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Module 20 - Smart Contracts/practice.sol": "MessageContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Module 20 - Smart Contracts/practice.sol": {
+			"keccak256": "0x683cf531f87a82ae7f4624e7dfd5e3d64b6672434b048bfc054a64e64af6aa2a",
+			"urls": [
+				"bzz-raw://0fa5b32bb52262ee704e8fc42a1ed41e7150ac7f55361e57864559aa999a5c83",
+				"dweb:/ipfs/QmRV8P5F2YR1D3g7F2QrrKQ7JJiVUbU5WSW3etULj61tr8"
+			]
+		}
+	},
+	"version": 1
+}
