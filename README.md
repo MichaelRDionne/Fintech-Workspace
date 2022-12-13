@@ -48,7 +48,7 @@
 ### Using lists (data structures)
 
 [listing assets](Solved/listing_assets.py)
-[401k shuffle](Module 1- Financial Programing with Py/Readings/03_The_401k_Shuffle/Solved/the_401k_shuffle.py)
 
+[401k shuffle](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/02_Listing_Assets%20/Solved/listing_assets.py)
 
 
