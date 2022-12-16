@@ -41,13 +41,29 @@
 
 [Conditional Statement](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/01_Conditional_Statement/Solved/conditional_statement.py)
 
-### Complex conditionals (if-else-elif, nested, )
+### Complex conditionals (if-else-elif, nested)
 
 [nested_conditionals](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/02_Nested_Conditionals/Solved/nested_conditionals.py)
 
 ### Data Driven Decisions (present & future value)
 
 [Split-Second Home buying,part 1](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/03_Split_Second_Homebuying/Solved/split_second_homebuying.py)
+
+### Python Functions (body, definition, calling)
+
+[A Definitive Buy](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/01_A_Definitive_Buy/Solved/a_definitive_buy.py)
+
+### Making Functions Dynamic (function parameters, function arguments, return values from functions)
+
+[Returned Goods](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/02_Returned_Goods/Solved/returned_goods.py)
+
+[Split-Second Home Buying,Part 2](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/03_Split_Second_Homebuying_Part_2/Solved/split_second_part_2.py)
+
+### Automation with Python (Iterators ("for" loops))
+
+[Racking up the Profits](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Readings/01_Racking_Up_The_Profit/Solved/racking_up_the_profit.py)
+
+### Iterating Nested Data structures
 
 
 
