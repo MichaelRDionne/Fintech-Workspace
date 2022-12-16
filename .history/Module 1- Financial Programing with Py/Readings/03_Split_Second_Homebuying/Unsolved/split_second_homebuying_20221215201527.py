@@ -11,7 +11,7 @@ holding_months = 12  # Number of months until sold (until Future Value)
 # variable named `present_value`.
 # Use the **monthly** version of the present value formula. 
 
-present_value = (expected_sale_price)/(1+hurdle_rate/12) **holding_months
+present_value = (120000)/(1+0.1/12)**holding_months
 print(f"Present Value is ${present_value}")
 
 

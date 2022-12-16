@@ -1,9 +1,9 @@
 """Split Second Homebuying."""
 
 # @TODO: # Use the following variables for present value calculations.
-home_price = 115000  # Investment cost
-expected_sale_price = 130000  # Future Value of the home
-hurdle_rate = 0.09  # 0.10 = 10% # Annual Discount Rate; minimum return expected
+home_price = 100000  # Investment cost
+expected_sale_price = 120000  # Future Value of the home
+hurdle_rate = 0.10  # 0.10 = 10% # Annual Discount Rate; minimum return expected
 holding_months = 12  # Number of months until sold (until Future Value)
 
 # @TODO: Using `expected_sale_price`, `hurdle_rate`, and `holding_months`,
@@ -11,7 +11,8 @@ holding_months = 12  # Number of months until sold (until Future Value)
 # variable named `present_value`.
 # Use the **monthly** version of the present value formula. 
 
-present_value = (expected_sale_price)/(1+hurdle_rate/12) **holding_months
+present_value = (120000)/(1+0.1/12)**holding_months
+
 print(f"Present Value is ${present_value}")
 
 
@@ -22,10 +23,6 @@ print(f"Present Value is ${present_value}")
 
 if present_value > home_price:
     print("Buy the property.")
-elif present_value < home_price: 
+else: 
     print("You will pass on this deal.")
-elif present_value == home_price:
-    print("You expect to break even on this deal.")
-
-
-
+    
