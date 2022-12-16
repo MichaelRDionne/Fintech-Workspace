@@ -32,7 +32,7 @@ def price_this_home(home_price, expected_sale_price, hurdle_rate, holding_months
 
 # Run the function
 #npv = price_this_home(
-    #home_price=100000, expected_sale_price=180000, hurdle_rate=0.10, holding_months=36)
+    home_price=100000, expected_sale_price=180000, hurdle_rate=0.10, holding_months=36
 
 npv = price_this_home(
     home_price=100000, expected_sale_price=120000, hurdle_rate=0.10, holding_months=36

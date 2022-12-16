@@ -7,15 +7,10 @@ stock_price = 30
 dividend_yields = [0.035, 0.040, 0.072, 0.012, 0.052]
 
 # @TODO: Create a variable to hold tallied dividend income
-total_dividend_income = 0.0
-
+# YOUR CODE HERE!
 
 # @TODO: Create a for loop to calculated and add up all the dividend income
-
-for div_yield in dividend_yields:
-    dividend_income = div_yield * stock_price
-    total_dividend_income= total_dividend_income + dividend_income
-    print("Your dividend income will be", dividend_income)
+# YOUR CODE HERE!
 
 # @TODO: Once it's all done, print the dividend income for the entire portfolio
-print("The total_dividend_income is (in $)", total_dividend_income)
+# YOUR CODE HERE!
