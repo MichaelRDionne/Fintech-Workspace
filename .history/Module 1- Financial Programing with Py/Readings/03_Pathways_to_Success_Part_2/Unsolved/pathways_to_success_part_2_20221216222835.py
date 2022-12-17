@@ -9,12 +9,12 @@ csvpath = Path("Module 1- Financial Programing with Py/Readings/03_Pathways_to_S
 
 
 # @TODO: Open the csv path, read the data, and print each row
-#with open(csvpath) as csvfile:
-#    data = csv.reader(csvfile)
-#    for row in data:
-#        print(row)
+with open(csvpath) as csvfile:
+    data = csv.reader(csvfile)
+    for row in data:
+        print(row)
 
-
+        
 
 """Extension.
 
@@ -27,13 +27,4 @@ this variable.
 """
 
 # @TODO: Add a row counter to the CSV data.
-
-counter = 0
-with open(csvpath) as csvfile:
-    data = csv.reader(csvfile)
-    for row in data:
-        counter = counter +1
-        print("row counter", counter)
-        print(row)
-        
-
+# YOUR CODE HERE!
