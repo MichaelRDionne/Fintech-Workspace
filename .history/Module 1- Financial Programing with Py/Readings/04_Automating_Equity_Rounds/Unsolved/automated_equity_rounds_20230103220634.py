@@ -17,7 +17,7 @@ for equity in equity_funding:
     # @TODO: Inside of the `for` loop, write an `if` statement that
     # appends the dictionary to the `big_raisers` list
     # if the funding amount is greater than $50 million (50000000).
-    if equity ["Amount"] >= 50000000:
+    if equity("Amount") >= 50000000:
         big_raisers.append(equity) 
 
 # Set the output header
