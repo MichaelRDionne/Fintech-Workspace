@@ -14,6 +14,7 @@ def load_bank_data(file_path):
     return load_csv(csvpath)
 
 
+
 # This function is the main execution point of the application. It triggers all the business logic.
 def run():
     # Set the file path of the CSV file with the banks and loans information
