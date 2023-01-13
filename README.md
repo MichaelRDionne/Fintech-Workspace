@@ -97,12 +97,16 @@
 
 [Module-1 Challenge](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%201-%20Financial%20Programing%20with%20Py/Module-1%20Challenge%20/loan_analyzer.py)
 
-
 ---
 
-## Module-2
+## Module-2 Financial Applications with Python
 
-### Functions
+### Write Financial Calculations for a Loan qualifier (user stories)
 
-[Functions](
-[...]
+[Loan Qualifier Financial Calculations](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%202-Financial%20Applications%20with%20Py/01_Loan_Qualifier_Financial_Calculations/Solved/app.py)
+
+[Loan Qualifier Filtering Data](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%202-Financial%20Applications%20with%20Py/02_Loan_Qualifier_Filtering_Data/Solved/app.py)
+
+### Functions (Importing, modular coding)
+
+[Loan Qualifier Modular Coding](
