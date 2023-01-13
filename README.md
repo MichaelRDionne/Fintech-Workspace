@@ -109,4 +109,12 @@
 
 ### Functions (Importing, modular coding)
 
-[Loan Qualifier Modular Coding](
+[Loan Qualifier Modular Coding](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%202-Financial%20Applications%20with%20Py/01_Modularize_Your_Loan_Qualifier_Application_Part_2/Solved/app.py)
+
+### Intro to Python Fire
+
+[CLI Random Clothes picker]()
+
+[Adding Fire to the loan qualifier app]()
+
+
