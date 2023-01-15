@@ -119,7 +119,11 @@
 
 ### Add questionary to the loan qualifier app
 
+[Add questionary to the loan app](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%202-Financial%20Applications%20with%20Py/02_Adding_questionary_to_Loan_Qualifier/Solved/app.py)
 
+### Creating the loan qualifier README
+
+[loan qualifier README]()
 
 
 
