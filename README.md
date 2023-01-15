@@ -125,7 +125,19 @@
 
 [loan qualifier README](https://github.com/DigitalGoldRush/Fintech-Workspace/tree/master/Module%202-Financial%20Applications%20with%20Py/01-Creating_the_Loan_Qualifier_README_File/Solved)
 
+#### Module-2 Challenge 
 
+[Module-2 Challenge]()
+
+### Pseudocoding 
+
+[Pseudocoding]()
+
+---
+
+## Module-3 Financial Applications with Python
+
+### Write Financial Calculations for a Loan qualifier (user stories)
 
 
 

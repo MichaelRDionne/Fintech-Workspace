@@ -1,0 +1,2 @@
+def count_the_vowels(str):
+  # @TODO: Your pseudocode here!
