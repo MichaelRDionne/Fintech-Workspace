@@ -142,14 +142,20 @@ def count_the_vowels(str):
 
 [Pseudocoding](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%202-Financial%20Applications%20with%20Py/01_Pseudocoding/Solved/count_the_vowels.py)
 
-
 ---
 
 ## Module-3 Financial Applications with Pandas
 
-### Write Financial Calculations for a Loan qualifier (user stories)
+### Series & Dataframes in Pandas (Import data, relative path)
 
+[Relative Paths JPG](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/media/3-1-series-vs-dataframe.png)
 
+[Import Data](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/01_Import_Data/3.1.5%20Import_data.ipynb)
 
+[Importing the Vix](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/01_Importing_the_VIX/Solved/Importing_the_VIX.ipynb)
 
+### Fix Column Headers (add column headers & names, rename columns)
 
+[3.1.7 Fix column headers]()
+
+[Headerless Horseman]()
