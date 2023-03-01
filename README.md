@@ -224,6 +224,6 @@ def count_the_vowels(str):
 
 ### 3.4.1 Time series analysis ()
 
-[Collect the Bitcoin Data]()
+[Collect the Bitcoin Data](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/3.4.3%20Bitcoin%20collections.ipynb)
 
 
