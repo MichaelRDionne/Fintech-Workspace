@@ -222,8 +222,26 @@ def count_the_vowels(str):
 
 [Banking Bonanza](https://github.com/DigitalGoldRush/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/04_Banking_Bonanza/Solved/Banking_Bonanza.ipynb)
 
-### 3.4.1 Time series analysis ()
+### 3.4.1 Time series analysis (index_col, Parse_date, )
 
 [Collect the Bitcoin Data](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/3.4.3%20Bitcoin%20collections.ipynb)
+
+### 3.4.4 Prepare the BTC Data (handle missing values, duplicated, describe function, summary stats, )
+
+### 3.4.7 Analyze the BTC Data via Plot Visualizations (overlay plots, 'loc' function
+
+[Bitcoin Summary_Statistics](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/02-Bitcoin_Summary_Statistics/Solved/Bitcoin_Summary_Statistics.ipynb)
+
+### 3.4.7 Analyze the BTC Data via Plot Visualizations (overlay plots, 'loc' function)
+
+[BTC Activity: Month Week Day](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/03-Bitcoin_Month_Week_Day/Solved/Bitcoin_Month_Week_Day.ipynb)
+
+### 3.4.12 Arbitrage Analysis (measure the spread, cover the trading costs, calculate profit in dollars and drop null values, profit sum, plot the profit, cumsum)
+
+[3.4.12 Arbitrage Analysis](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/3.4.12%20Arbitrage%20Analysis.ipynb)
+
+### Module 3 Challenge (Arbitrage Opportunities Bitstamp Vs Coinbase)
+
+[Module 3 Challenge (Arbitrage Opportunities Bitstamp Vs Coinbase)](https://github.com/MichaelRDionne/Fintech-Workspace/blob/master/Module%203-Financial%20Analysis%20with%20Pandas/Readings/3.4.12%20Arbitrage%20Analysis.ipynb)
 
 
